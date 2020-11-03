@@ -287,6 +287,69 @@ files:
         }
     }
   learner_created: false
+- name: src/cinema/MovieTheater.java
+  visible: true
+  text: |
+    package cinema;
+
+    public class MovieTheater {
+        private int rows;
+        private int columns;
+        private String [][] shapeTheater = new String[rows][columns];
+
+        public void setRows(int rows) {
+            if (rows <= 0) {
+                throw new IllegalArgumentException();
+            }
+            this.rows = rows;
+        }
+
+        public void setColumns(int columns) {
+            if (columns <= 0) {
+                throw new IllegalArgumentException();
+            }
+            this.columns = columns;
+        }
+
+        public void calculateProfit() {
+            int size = rows * columns;
+            int profit = 0;
+
+            if (rows * columns <= 60) {
+                profit = size * 10;
+            } else {
+                if (rows % 2 == 0) {
+                    profit = (rows / 2 * 10 + rows / 2 * 8) * columns;
+                } else {
+                    profit = (rows / 2 * 10 + (rows / 2 + 1) * 8) * columns;
+                }
+            }
+            System.out.printf("Total income:\n$%d", profit);
+        }
+
+
+        public void displayTheater() {
+            System.out.println("Cinema:");
+            System.out.print(" ");
+            for (int i = 1; i <= columns; i++) {
+                System.out.print(" " + i);
+            }
+            System.out.println();
+            for (int i = 1; i <= rows; i++) {
+                System.out.print(i + " ");
+                for (int j = 1; j <= columns; j++) {
+                    System.out.print("S" + " ");
+                }
+                System.out.println();
+            }
+
+        }
+    }
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/133/stages/711/implement
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations! Continue on <a href="https://hyperskill.org/projects/133/stages/711/implement">JetBrains
+    Academy</a>
+  time: Tue, 03 Nov 2020 02:59:36 UTC
 record: -1
