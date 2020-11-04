@@ -1,4 +1,5 @@
 cinema/Cinema.java
  cinema.Cinema
+ cinema.CinemaMenu
 cinema/MovieTheater.java
  cinema.MovieTheater

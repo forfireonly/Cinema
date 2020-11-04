@@ -13,7 +13,14 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/Cinema Room Manager/task" />
             <option value="$PROJECT_DIR$/Problems/Area of parallelogram" />
+            <option value="$PROJECT_DIR$/Problems/Calculating factorials" />
             <option value="$PROJECT_DIR$/Problems/Call me awesome" />
+            <option value="$PROJECT_DIR$/Problems/Division" />
+            <option value="$PROJECT_DIR$/Problems/Find the max of three numbers" />
+            <option value="$PROJECT_DIR$/Problems/Raise to the power" />
+            <option value="$PROJECT_DIR$/Problems/Sum of numbers in the range" />
+            <option value="$PROJECT_DIR$/Problems/The sign of a number" />
+            <option value="$PROJECT_DIR$/Problems/Vowel or not" />
             <option value="$PROJECT_DIR$/util" />
           </set>
         </option>

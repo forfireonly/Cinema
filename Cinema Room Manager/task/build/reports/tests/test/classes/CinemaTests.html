@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.449s</div>
+<div class="counter">0.261s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,7 +79,7 @@
 </thead>
 <tr>
 <td class="success">start</td>
-<td class="success">0.449s</td>
+<td class="success">0.261s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -94,6 +94,25 @@ Enter the number of rows:
 Enter the number of seats in each row:
 &gt; 8
 
+1. Show the seats
+2. Buy a ticket
+0. Exit
+
+&gt; 0
+
+?[1;31m
+Start test 2?[0m
+Enter the number of rows:
+&gt; 7
+Enter the number of seats in each row:
+&gt; 8
+
+1. Show the seats
+2. Buy a ticket
+0. Exit
+
+&gt; 1
+
 Cinema:
   1 2 3 4 5 6 7 8
 1 S S S S S S S S 
@@ -104,12 +123,85 @@ Cinema:
 6 S S S S S S S S 
 7 S S S S S S S S 
 
+1. Show the seats
+2. Buy a ticket
+0. Exit
+
+Enter the number of rows:
+&gt; 2
+Enter the number of seats in each row:
+&gt; 2
+
+1. Show the seats
+2. Buy a ticket
+0. Exit
+
+&gt; 1
+
+Cinema:
+  1 2
+1 S S 
+2 S S 
+
+1. Show the seats
+2. Buy a ticket
+0. Exit
+
+Enter the number of rows:
+&gt; 9
+Enter the number of seats in each row:
+&gt; 9
+
+1. Show the seats
+2. Buy a ticket
+0. Exit
+
+&gt; 1
+
+Cinema:
+  1 2 3 4 5 6 7 8 9
+1 S S S S S S S S S 
+2 S S S S S S S S S 
+3 S S S S S S S S S 
+4 S S S S S S S S S 
+5 S S S S S S S S S 
+6 S S S S S S S S S 
+7 S S S S S S S S S 
+8 S S S S S S S S S 
+9 S S S S S S S S S 
+
+1. Show the seats
+2. Buy a ticket
+0. Exit
+
+&gt; 0
+
+?[1;31m
+Start test 3?[0m
+Enter the number of rows:
+&gt; 7
+Enter the number of seats in each row:
+&gt; 8
+
+1. Show the seats
+2. Buy a ticket
+0. Exit
+
+&gt; 2
+
 Enter a row number:
 &gt; 2
 Enter a seat number in that row:
 &gt; 4
 
 Ticket price: $10
+
+1. Show the seats
+2. Buy a ticket
+0. Exit
+
+&gt; 1
+
 Cinema:
   1 2 3 4 5 6 7 8
 1 S S S S S S S S 
@@ -119,54 +211,52 @@ Cinema:
 5 S S S S S S S S 
 6 S S S S S S S S 
 7 S S S S S S S S 
-?[1;31m
-Start test 2?[0m
-Enter the number of rows:
-&gt; 7
-Enter the number of seats in each row:
-&gt; 8
+
+1. Show the seats
+2. Buy a ticket
+0. Exit
+
+&gt; 2
+
+Enter a row number:
+&gt; 3
+Enter a seat number in that row:
+&gt; 5
+
+Ticket price: $10
+
+1. Show the seats
+2. Buy a ticket
+0. Exit
+
+&gt; 1
 
 Cinema:
   1 2 3 4 5 6 7 8
 1 S S S S S S S S 
-2 S S S S S S S S 
-3 S S S S S S S S 
+2 S S S B S S S S 
+3 S S S S B S S S 
 4 S S S S S S S S 
 5 S S S S S S S S 
 6 S S S S S S S S 
 7 S S S S S S S S 
 
-Enter a row number:
-&gt; 4
-Enter a seat number in that row:
-&gt; 1
+1. Show the seats
+2. Buy a ticket
+0. Exit
 
-Ticket price: $10
-Cinema:
-  1 2 3 4 5 6 7 8
-1 S S S S S S S S 
-2 S S S S S S S S 
-3 S S S S S S S S 
-4 B S S S S S S S 
-5 S S S S S S S S 
-6 S S S S S S S S 
-7 S S S S S S S S 
+?[1;31m
+Start test 4?[0m
 Enter the number of rows:
 &gt; 9
 Enter the number of seats in each row:
 &gt; 9
 
-Cinema:
-  1 2 3 4 5 6 7 8 9
-1 S S S S S S S S S 
-2 S S S S S S S S S 
-3 S S S S S S S S S 
-4 S S S S S S S S S 
-5 S S S S S S S S S 
-6 S S S S S S S S S 
-7 S S S S S S S S S 
-8 S S S S S S S S S 
-9 S S S S S S S S S 
+1. Show the seats
+2. Buy a ticket
+0. Exit
+
+&gt; 2
 
 Enter a row number:
 &gt; 1
@@ -174,101 +264,12 @@ Enter a seat number in that row:
 &gt; 1
 
 Ticket price: $10
-Cinema:
-  1 2 3 4 5 6 7 8 9
-1 B S S S S S S S S 
-2 S S S S S S S S S 
-3 S S S S S S S S S 
-4 S S S S S S S S S 
-5 S S S S S S S S S 
-6 S S S S S S S S S 
-7 S S S S S S S S S 
-8 S S S S S S S S S 
-9 S S S S S S S S S 
-Enter the number of rows:
-&gt; 9
-Enter the number of seats in each row:
-&gt; 9
 
-Cinema:
-  1 2 3 4 5 6 7 8 9
-1 S S S S S S S S S 
-2 S S S S S S S S S 
-3 S S S S S S S S S 
-4 S S S S S S S S S 
-5 S S S S S S S S S 
-6 S S S S S S S S S 
-7 S S S S S S S S S 
-8 S S S S S S S S S 
-9 S S S S S S S S S 
+1. Show the seats
+2. Buy a ticket
+0. Exit
 
-Enter a row number:
-&gt; 7
-Enter a seat number in that row:
-&gt; 8
-
-Ticket price: $8
-Cinema:
-  1 2 3 4 5 6 7 8 9
-1 S S S S S S S S S 
-2 S S S S S S S S S 
-3 S S S S S S S S S 
-4 S S S S S S S S S 
-5 S S S S S S S S S 
-6 S S S S S S S S S 
-7 S S S S S S S B S 
-8 S S S S S S S S S 
-9 S S S S S S S S S 
-Enter the number of rows:
-&gt; 9
-Enter the number of seats in each row:
-&gt; 9
-
-Cinema:
-  1 2 3 4 5 6 7 8 9
-1 S S S S S S S S S 
-2 S S S S S S S S S 
-3 S S S S S S S S S 
-4 S S S S S S S S S 
-5 S S S S S S S S S 
-6 S S S S S S S S S 
-7 S S S S S S S S S 
-8 S S S S S S S S S 
-9 S S S S S S S S S 
-
-Enter a row number:
-&gt; 5
-Enter a seat number in that row:
-&gt; 5
-
-Ticket price: $8
-Cinema:
-  1 2 3 4 5 6 7 8 9
-1 S S S S S S S S S 
-2 S S S S S S S S S 
-3 S S S S S S S S S 
-4 S S S S S S S S S 
-5 S S S S B S S S S 
-6 S S S S S S S S S 
-7 S S S S S S S S S 
-8 S S S S S S S S S 
-9 S S S S S S S S S 
-Enter the number of rows:
-&gt; 9
-Enter the number of seats in each row:
-&gt; 9
-
-Cinema:
-  1 2 3 4 5 6 7 8 9
-1 S S S S S S S S S 
-2 S S S S S S S S S 
-3 S S S S S S S S S 
-4 S S S S S S S S S 
-5 S S S S S S S S S 
-6 S S S S S S S S S 
-7 S S S S S S S S S 
-8 S S S S S S S S S 
-9 S S S S S S S S S 
+&gt; 2
 
 Enter a row number:
 &gt; 4
@@ -276,6 +277,13 @@ Enter a seat number in that row:
 &gt; 5
 
 Ticket price: $10
+
+1. Show the seats
+2. Buy a ticket
+0. Exit
+
+&gt; 1
+
 Cinema:
   1 2 3 4 5 6 7 8 9
 1 S S S S S S S S S 
@@ -287,6 +295,73 @@ Cinema:
 7 S S S S S S S S S 
 8 S S S S S S S S S 
 9 S S S S S S S S S 
+
+1. Show the seats
+2. Buy a ticket
+0. Exit
+
+&gt; 2
+
+Enter a row number:
+&gt; 5
+Enter a seat number in that row:
+&gt; 5
+
+Ticket price: $8
+
+1. Show the seats
+2. Buy a ticket
+0. Exit
+
+&gt; 1
+
+Cinema:
+  1 2 3 4 5 6 7 8 9
+1 S S S S S S S S S 
+2 S S S S S S S S S 
+3 S S S S S S S S S 
+4 S S S S B S S S S 
+5 S S S S B S S S S 
+6 S S S S S S S S S 
+7 S S S S S S S S S 
+8 S S S S S S S S S 
+9 S S S S S S S S S 
+
+1. Show the seats
+2. Buy a ticket
+0. Exit
+
+&gt; 2
+
+Enter a row number:
+&gt; 6
+Enter a seat number in that row:
+&gt; 6
+
+Ticket price: $8
+
+1. Show the seats
+2. Buy a ticket
+0. Exit
+
+&gt; 1
+
+Cinema:
+  1 2 3 4 5 6 7 8 9
+1 S S S S S S S S S 
+2 S S S S S S S S S 
+3 S S S S S S S S S 
+4 S S S S B S S S S 
+5 S S S S B S S S S 
+6 S S S S S B S S S 
+7 S S S S S S S S S 
+8 S S S S S S S S S 
+9 S S S S S S S S S 
+
+1. Show the seats
+2. Buy a ticket
+0. Exit
+
 </pre>
 </span>
 </div>
@@ -298,7 +373,7 @@ Cinema:
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.6.1</a> at Nov 2, 2020, 7:59:36 PM</p>
+<a href="http://www.gradle.org">Gradle 6.6.1</a> at Nov 4, 2020, 1:46:01 PM</p>
 </div>
 </div>
 </body>

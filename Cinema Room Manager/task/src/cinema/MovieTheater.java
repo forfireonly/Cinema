@@ -27,6 +27,13 @@ public class MovieTheater {
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < columns; j++) {
                 shapeTheater[i][j] = "S ";
+            }
+        }
+    }
+
+    public void buySeat() {
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < columns; j++) {
                 if (i == rowBought - 1  && j == columnBought - 1) {
                     shapeTheater[i][j] = "B ";
                 }
