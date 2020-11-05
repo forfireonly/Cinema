@@ -5,6 +5,8 @@ public class MovieTheater {
     private int columns;
     String[][] shapeTheater;
 
+    int profit = 0;
+
     private int rowBought;
     private int columnBought;
 
@@ -22,7 +24,7 @@ public class MovieTheater {
         this.columnBought = columnBought;
     }
 
-    public void fillTheaterS(){
+    public void fillTheaterS() {
         shapeTheater = new String[rows][columns];
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < columns; j++) {
@@ -31,15 +33,18 @@ public class MovieTheater {
         }
     }
 
-    public void buySeat() {
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < columns; j++) {
-                if (i == rowBought - 1  && j == columnBought - 1) {
-                    shapeTheater[i][j] = "B ";
-                }
-
-            }
+    public boolean buySeat() {
+        boolean isAvailable = false;
+        int i = rowBought - 1;
+        int j = columnBought - 1;
+        if (shapeTheater[i][j].equals("B ")) {
+            System.out.println("\nThat ticket has already been purchased\n");
+        } else{
+            shapeTheater[i][j] = "B ";
+            Cinema.currentProfit += displayTicketPrice();
+            isAvailable = true;
         }
+        return isAvailable;
     }
 
     public void setRows(int rows) {
@@ -58,7 +63,7 @@ public class MovieTheater {
 
     public void calculateProfit() {
         int size = rows * columns;
-        int profit = 0;
+
 
         if (rows * columns <= 60) {
             profit = size * 10;
@@ -69,10 +74,10 @@ public class MovieTheater {
                 profit = (rows / 2 * 10 + (rows / 2 + 1) * 8) * columns;
             }
         }
-        System.out.printf("Total income:\n$%d", profit);
+        System.out.printf("Total income: $%d", profit);
     }
 
-    public void displayTicketPrice() {
+    public int displayTicketPrice() {
         int size = rows * columns;
         int ticketPrice = 0;
         if (rows * columns <= 60) {
@@ -85,6 +90,7 @@ public class MovieTheater {
             }
         }
         System.out.printf("\nTicket price: $%d\n", ticketPrice);
+        return ticketPrice;
     }
 
     public void displayFilledTheater() {
@@ -119,3 +125,5 @@ public class MovieTheater {
         }
     }
 }
+
+
